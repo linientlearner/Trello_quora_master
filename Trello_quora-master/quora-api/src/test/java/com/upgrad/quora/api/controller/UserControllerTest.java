@@ -37,7 +37,6 @@ public class UserControllerTest {
                 .andExpect(MockMvcResultMatchers.jsonPath("code").value("SGR-002"));
     }
 
-/*
     //This test case passes when you try to signout but the JWT token entered does not exist in the database.
     @Test
     public void signoutWithNonExistingAccessToken() throws Exception {
@@ -45,6 +44,4 @@ public class UserControllerTest {
                 .andExpect(status().isUnauthorized())
                 .andExpect(MockMvcResultMatchers.jsonPath("code").value("SGR-001"));
     }
-*/
-
 }

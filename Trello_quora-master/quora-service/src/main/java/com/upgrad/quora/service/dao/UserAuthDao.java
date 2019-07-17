@@ -27,4 +27,9 @@ public class UserAuthDao {
         entityManager.persist(userAuthEntity);
         return userAuthEntity;
     }
+
+    public UserAuthEntity logOut(UserAuthEntity userAuthEntity) {
+        entityManager.merge(userAuthEntity);
+        return userAuthEntity;
+    }
 }
