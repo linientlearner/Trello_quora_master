@@ -9,14 +9,12 @@ import com.upgrad.quora.service.entity.QuestionEntity;
 import com.upgrad.quora.service.entity.UserAuthEntity;
 import com.upgrad.quora.service.exception.AuthenticationFailedException;
 import com.upgrad.quora.service.exception.AuthorizationFailedException;
+import com.upgrad.quora.service.exception.InvalidQuestionException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.RequestHeader;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.time.ZonedDateTime;
 import java.util.ArrayList;
@@ -63,5 +61,23 @@ public class QuestionController {
                     .status(questionEntities.get(i).getContent()));
         }
         return new ResponseEntity<List<QuestionResponse>>(questionResponse, HttpStatus.OK);
+    }
+
+    @RequestMapping(method = RequestMethod.PUT, path = "/question/edit/{questionId}", consumes = MediaType.APPLICATION_JSON_UTF8_VALUE, produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
+    public ResponseEntity<QuestionResponse> editQuestion(@PathVariable("questionId") final String questionId,
+                                                         @RequestHeader("authorization") final String authorization,
+                                                         final QuestionRequest questionRequest)
+            throws AuthenticationFailedException, AuthorizationFailedException, InvalidQuestionException {
+
+        final UserAuthEntity userAuthEntity = commonBusinessService.validateAuthToken(authorization);
+
+        final QuestionEntity editedQuestionEntity = questionService.getQuestion(questionId, authorization);
+        editedQuestionEntity.setContent(questionRequest.getContent());
+        editedQuestionEntity.setDate(ZonedDateTime.now());
+        editedQuestionEntity.setUser(userAuthEntity.getUser());
+
+        final QuestionEntity editedQuestion = questionService.updateQuestionEntity(editedQuestionEntity);
+        QuestionResponse questionResponse = new QuestionResponse().id(editedQuestion.getUuid()).status("QUESTION EDITED");
+        return new ResponseEntity<QuestionResponse>(questionResponse, HttpStatus.OK);
     }
  }
