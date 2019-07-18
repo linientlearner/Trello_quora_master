@@ -4,6 +4,8 @@ com\upgrad\quora\service\exception\UserNotFoundException.class
 com\upgrad\quora\service\common\UnexpectedException.class
 com\upgrad\quora\service\business\UserBusinessService.class
 com\upgrad\quora\service\common\ErrorCode.class
+com\upgrad\quora\service\dao\QuestionDao.class
+com\upgrad\quora\service\entity\QuestionEntity.class
 com\upgrad\quora\service\entity\UserAuthEntity.class
 com\upgrad\quora\service\entity\UsersEntity.class
 com\upgrad\quora\service\business\JwtTokenProvider.class
