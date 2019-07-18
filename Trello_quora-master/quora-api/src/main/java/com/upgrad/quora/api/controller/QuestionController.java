@@ -80,4 +80,22 @@ public class QuestionController {
         QuestionResponse questionResponse = new QuestionResponse().id(editedQuestion.getUuid()).status("QUESTION EDITED");
         return new ResponseEntity<QuestionResponse>(questionResponse, HttpStatus.OK);
     }
- }
+
+
+    @RequestMapping(method = RequestMethod.DELETE, path = "/question/delete/{questionId}", produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
+    public ResponseEntity<QuestionResponse> deleteQuestion(@PathVariable("questionId") final String questionId,
+                                                           @RequestHeader("authorization") final String authorization)
+            throws AuthenticationFailedException, AuthorizationFailedException, InvalidQuestionException {
+
+        final UserAuthEntity userAuthEntity = commonBusinessService.validateAuthToken(authorization);
+
+        final QuestionEntity deleteQuestionEntity = questionService.getQuestion(questionId, authorization);
+
+        final String deletedQuestionUuid = deleteQuestionEntity.getUuid();
+
+        questionService.deleteQuestionEntity(deleteQuestionEntity);
+
+        QuestionResponse questionResponse = new QuestionResponse().id(deletedQuestionUuid).status("QUESTION DELETED");
+        return new ResponseEntity<QuestionResponse>(questionResponse, HttpStatus.OK);
+    }
+}
