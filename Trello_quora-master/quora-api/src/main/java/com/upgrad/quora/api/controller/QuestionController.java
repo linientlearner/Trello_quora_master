@@ -19,6 +19,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.time.ZonedDateTime;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.UUID;
 
 @RestController
@@ -46,5 +48,20 @@ public class QuestionController {
         return new ResponseEntity<QuestionResponse>(questionResponse, HttpStatus.CREATED);
     }
 
+    @RequestMapping(method = RequestMethod.GET, path = "/question/all", produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
+    public ResponseEntity<List<QuestionResponse>> getAllQuestions(@RequestHeader("authorization") final String authorization) throws AuthorizationFailedException {
 
+        final UserAuthEntity userAuthTokenEntity = commonBusinessService.validateAuthToken(authorization);
+
+        final List<QuestionEntity> questionEntities = questionService.getAllQuestions();
+
+        List<QuestionResponse> questionResponse = new ArrayList<QuestionResponse>();
+        QuestionResponse questionSingleResponse = new QuestionResponse();
+
+        for (int i = 0; i < questionEntities.size(); i++) {
+            questionResponse.add(questionSingleResponse.id(questionEntities.get(i).getUuid())
+                    .status(questionEntities.get(i).getContent()));
+        }
+        return new ResponseEntity<List<QuestionResponse>>(questionResponse, HttpStatus.OK);
     }
+ }
