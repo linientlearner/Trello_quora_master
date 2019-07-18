@@ -20,11 +20,13 @@ C:\Users\AMITHIRAN\Desktop\github\course5_Assisnment_1\Trello_quora_master\Trell
 C:\Users\AMITHIRAN\Desktop\github\course5_Assisnment_1\Trello_quora_master\Trello_quora-master\quora-api\target\generated-sources\.\io\swagger\api\NotFoundException.java
 C:\Users\AMITHIRAN\Desktop\github\course5_Assisnment_1\Trello_quora_master\Trello_quora-master\quora-api\target\generated-sources\.\com\upgrad\quora\api\model\ErrorResponse.java
 C:\Users\AMITHIRAN\Desktop\github\course5_Assisnment_1\Trello_quora_master\Trello_quora-master\quora-api\target\generated-sources\.\io\swagger\api\ApiOriginFilter.java
+C:\Users\AMITHIRAN\Desktop\github\course5_Assisnment_1\Trello_quora_master\Trello_quora-master\quora-api\src\main\java\com\upgrad\quora\api\controller\CommonController.java
 C:\Users\AMITHIRAN\Desktop\github\course5_Assisnment_1\Trello_quora_master\Trello_quora-master\quora-api\target\generated-sources\.\io\swagger\configuration\HomeController.java
 C:\Users\AMITHIRAN\Desktop\github\course5_Assisnment_1\Trello_quora_master\Trello_quora-master\quora-api\target\generated-sources\.\com\upgrad\quora\api\model\AnswerDetailsResponse.java
 C:\Users\AMITHIRAN\Desktop\github\course5_Assisnment_1\Trello_quora_master\Trello_quora-master\quora-api\src\main\java\com\upgrad\quora\api\config\SwaggerConfiguration.java
 C:\Users\AMITHIRAN\Desktop\github\course5_Assisnment_1\Trello_quora_master\Trello_quora-master\quora-api\target\generated-sources\.\com\upgrad\quora\api\model\QuestionRequest.java
 C:\Users\AMITHIRAN\Desktop\github\course5_Assisnment_1\Trello_quora_master\Trello_quora-master\quora-api\src\main\java\com\upgrad\quora\api\QuoraApiApplication.java
+C:\Users\AMITHIRAN\Desktop\github\course5_Assisnment_1\Trello_quora_master\Trello_quora-master\quora-api\src\main\java\com\upgrad\quora\api\controller\QuestionController.java
 C:\Users\AMITHIRAN\Desktop\github\course5_Assisnment_1\Trello_quora_master\Trello_quora-master\quora-api\target\generated-sources\.\io\swagger\Swagger2SpringBoot.java
 C:\Users\AMITHIRAN\Desktop\github\course5_Assisnment_1\Trello_quora_master\Trello_quora-master\quora-api\target\generated-sources\.\com\upgrad\quora\api\model\QuestionEditRequest.java
 C:\Users\AMITHIRAN\Desktop\github\course5_Assisnment_1\Trello_quora_master\Trello_quora-master\quora-api\target\generated-sources\.\com\upgrad\quora\api\model\SigninResponse.java
