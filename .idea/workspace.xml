@@ -2,47 +2,60 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b2cfc5e1-efe1-43a8-9cb3-4ecb6d03d222" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Trello_quora-master/quora-api/src/main/java/com/upgrad/quora/api/controller/AdminController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Trello_quora-master/quora-api/target/classes/com/upgrad/quora/api/QuoraApiApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Trello_quora-master/quora-api/target/classes/com/upgrad/quora/api/config/SwaggerConfiguration.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Trello_quora-master/quora-api/target/classes/com/upgrad/quora/api/controller/CommonController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Trello_quora-master/quora-api/target/classes/com/upgrad/quora/api/model/AnswerDeleteResponse.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Trello_quora-master/quora-api/target/classes/com/upgrad/quora/api/model/AnswerDetailsResponse.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Trello_quora-master/quora-api/target/classes/com/upgrad/quora/api/model/AnswerEditRequest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Trello_quora-master/quora-api/target/classes/com/upgrad/quora/api/model/AnswerEditResponse.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Trello_quora-master/quora-api/target/classes/com/upgrad/quora/api/model/AnswerRequest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Trello_quora-master/quora-api/target/classes/com/upgrad/quora/api/model/AnswerResponse.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Trello_quora-master/quora-api/target/classes/com/upgrad/quora/api/model/ErrorResponse.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Trello_quora-master/quora-api/target/classes/com/upgrad/quora/api/model/QuestionDeleteResponse.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Trello_quora-master/quora-api/target/classes/com/upgrad/quora/api/model/QuestionDetailsResponse.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Trello_quora-master/quora-api/target/classes/com/upgrad/quora/api/model/QuestionEditRequest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Trello_quora-master/quora-api/target/classes/com/upgrad/quora/api/model/QuestionEditResponse.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Trello_quora-master/quora-api/target/classes/com/upgrad/quora/api/model/QuestionRequest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Trello_quora-master/quora-api/target/classes/com/upgrad/quora/api/model/QuestionResponse.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Trello_quora-master/quora-api/target/classes/com/upgrad/quora/api/model/SigninResponse.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Trello_quora-master/quora-api/target/classes/com/upgrad/quora/api/model/SignoutResponse.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Trello_quora-master/quora-api/target/classes/com/upgrad/quora/api/model/SignupUserRequest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Trello_quora-master/quora-api/target/classes/com/upgrad/quora/api/model/SignupUserResponse.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Trello_quora-master/quora-api/target/classes/com/upgrad/quora/api/model/UserDeleteResponse.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Trello_quora-master/quora-api/target/classes/com/upgrad/quora/api/model/UserDetailsResponse.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Trello_quora-master/quora-api/target/classes/io/swagger/RFC3339DateFormat.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Trello_quora-master/quora-api/target/classes/io/swagger/Swagger2SpringBoot$ExitException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Trello_quora-master/quora-api/target/classes/io/swagger/Swagger2SpringBoot.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Trello_quora-master/quora-api/target/classes/io/swagger/api/ApiException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Trello_quora-master/quora-api/target/classes/io/swagger/api/ApiOriginFilter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Trello_quora-master/quora-api/target/classes/io/swagger/api/ApiResponseMessage.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Trello_quora-master/quora-api/target/classes/io/swagger/api/NotFoundException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Trello_quora-master/quora-api/target/classes/io/swagger/configuration/HomeController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Trello_quora-master/quora-api/target/classes/io/swagger/configuration/SwaggerDocumentationConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Trello_quora-master/quora-service/src/main/java/com/upgrad/quora/service/business/AdminBusinessService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Trello_quora-master/quora-service/src/main/java/com/upgrad/quora/service/dao/AdminDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Trello_quora-master/quora-service/target/classes/com/upgrad/quora/service/ServiceConfiguration.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Trello_quora-master/quora-service/target/classes/com/upgrad/quora/service/business/JwtTokenProvider.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Trello_quora-master/quora-service/target/classes/com/upgrad/quora/service/business/PasswordCryptographyProvider.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Trello_quora-master/quora-service/target/classes/com/upgrad/quora/service/common/ErrorCode.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Trello_quora-master/quora-service/target/classes/com/upgrad/quora/service/common/GenericErrorCode.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Trello_quora-master/quora-service/target/classes/com/upgrad/quora/service/common/UnexpectedException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Trello_quora-master/quora-service/target/classes/com/upgrad/quora/service/dao/UserAuthDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Trello_quora-master/quora-service/target/classes/com/upgrad/quora/service/dao/UserDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Trello_quora-master/quora-service/target/classes/com/upgrad/quora/service/entity/UserAuthEntity.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Trello_quora-master/quora-service/target/classes/com/upgrad/quora/service/entity/UsersEntity.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Trello_quora-master/quora-service/target/classes/com/upgrad/quora/service/exception/AnswerNotFoundException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Trello_quora-master/quora-service/target/classes/com/upgrad/quora/service/exception/AuthenticationFailedException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Trello_quora-master/quora-service/target/classes/com/upgrad/quora/service/exception/AuthorizationFailedException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Trello_quora-master/quora-service/target/classes/com/upgrad/quora/service/exception/InvalidQuestionException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Trello_quora-master/quora-service/target/classes/com/upgrad/quora/service/exception/SignOutRestrictedException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Trello_quora-master/quora-service/target/classes/com/upgrad/quora/service/exception/SignUpRestrictedException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Trello_quora-master/quora-service/target/classes/com/upgrad/quora/service/exception/UserNotFoundException.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Trello_quora-master/quora-api/src/main/java/com/upgrad/quora/api/exception/RestExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/Trello_quora-master/quora-api/src/main/java/com/upgrad/quora/api/exception/RestExceptionHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Trello_quora-master/quora-api/target/classes/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Trello_quora-master/quora-api/target/classes/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trello_quora-master/quora-api/target/classes/com/upgrad/quora/api/QuoraApiApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trello_quora-master/quora-api/target/classes/com/upgrad/quora/api/config/SwaggerConfiguration.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trello_quora-master/quora-api/target/classes/com/upgrad/quora/api/controller/CommonController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trello_quora-master/quora-api/target/classes/com/upgrad/quora/api/controller/QuestionController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trello_quora-master/quora-api/target/classes/com/upgrad/quora/api/controller/UserController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trello_quora-master/quora-api/target/classes/com/upgrad/quora/api/exception/RestExceptionHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trello_quora-master/quora-api/target/classes/com/upgrad/quora/api/model/AnswerDeleteResponse.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trello_quora-master/quora-api/target/classes/com/upgrad/quora/api/model/AnswerDetailsResponse.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trello_quora-master/quora-api/target/classes/com/upgrad/quora/api/model/AnswerEditRequest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trello_quora-master/quora-api/target/classes/com/upgrad/quora/api/model/AnswerEditResponse.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trello_quora-master/quora-api/target/classes/com/upgrad/quora/api/model/AnswerRequest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trello_quora-master/quora-api/target/classes/com/upgrad/quora/api/model/AnswerResponse.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trello_quora-master/quora-api/target/classes/com/upgrad/quora/api/model/ErrorResponse.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trello_quora-master/quora-api/target/classes/com/upgrad/quora/api/model/QuestionDeleteResponse.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trello_quora-master/quora-api/target/classes/com/upgrad/quora/api/model/QuestionDetailsResponse.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trello_quora-master/quora-api/target/classes/com/upgrad/quora/api/model/QuestionEditRequest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trello_quora-master/quora-api/target/classes/com/upgrad/quora/api/model/QuestionEditResponse.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trello_quora-master/quora-api/target/classes/com/upgrad/quora/api/model/QuestionRequest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trello_quora-master/quora-api/target/classes/com/upgrad/quora/api/model/QuestionResponse.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trello_quora-master/quora-api/target/classes/com/upgrad/quora/api/model/SigninResponse.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trello_quora-master/quora-api/target/classes/com/upgrad/quora/api/model/SignoutResponse.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trello_quora-master/quora-api/target/classes/com/upgrad/quora/api/model/SignupUserRequest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trello_quora-master/quora-api/target/classes/com/upgrad/quora/api/model/SignupUserResponse.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trello_quora-master/quora-api/target/classes/com/upgrad/quora/api/model/UserDeleteResponse.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trello_quora-master/quora-api/target/classes/com/upgrad/quora/api/model/UserDetailsResponse.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trello_quora-master/quora-api/target/classes/endpoints/admin.json" beforeDir="false" afterPath="$PROJECT_DIR$/Trello_quora-master/quora-api/target/classes/endpoints/admin.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trello_quora-master/quora-api/target/classes/endpoints/answer.json" beforeDir="false" afterPath="$PROJECT_DIR$/Trello_quora-master/quora-api/target/classes/endpoints/answer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trello_quora-master/quora-api/target/classes/endpoints/common.json" beforeDir="false" afterPath="$PROJECT_DIR$/Trello_quora-master/quora-api/target/classes/endpoints/common.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trello_quora-master/quora-api/target/classes/endpoints/question.json" beforeDir="false" afterPath="$PROJECT_DIR$/Trello_quora-master/quora-api/target/classes/endpoints/question.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trello_quora-master/quora-api/target/classes/endpoints/user.json" beforeDir="false" afterPath="$PROJECT_DIR$/Trello_quora-master/quora-api/target/classes/endpoints/user.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trello_quora-master/quora-api/target/classes/io/swagger/RFC3339DateFormat.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trello_quora-master/quora-api/target/classes/io/swagger/Swagger2SpringBoot$ExitException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trello_quora-master/quora-api/target/classes/io/swagger/Swagger2SpringBoot.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trello_quora-master/quora-api/target/classes/io/swagger/api/ApiException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trello_quora-master/quora-api/target/classes/io/swagger/api/ApiOriginFilter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trello_quora-master/quora-api/target/classes/io/swagger/api/ApiResponseMessage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trello_quora-master/quora-api/target/classes/io/swagger/api/NotFoundException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trello_quora-master/quora-api/target/classes/io/swagger/configuration/HomeController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trello_quora-master/quora-api/target/classes/io/swagger/configuration/SwaggerDocumentationConfig.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Trello_quora-master/quora-api/target/generated-sources/com/upgrad/quora/api/model/AnswerDeleteResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/Trello_quora-master/quora-api/target/generated-sources/com/upgrad/quora/api/model/AnswerDeleteResponse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Trello_quora-master/quora-api/target/generated-sources/com/upgrad/quora/api/model/AnswerDetailsResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/Trello_quora-master/quora-api/target/generated-sources/com/upgrad/quora/api/model/AnswerDetailsResponse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Trello_quora-master/quora-api/target/generated-sources/com/upgrad/quora/api/model/AnswerEditRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Trello_quora-master/quora-api/target/generated-sources/com/upgrad/quora/api/model/AnswerEditRequest.java" afterDir="false" />
@@ -69,36 +82,14 @@
       <change beforePath="$PROJECT_DIR$/Trello_quora-master/quora-api/target/generated-sources/io/swagger/configuration/SwaggerDocumentationConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/Trello_quora-master/quora-api/target/generated-sources/io/swagger/configuration/SwaggerDocumentationConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Trello_quora-master/quora-api/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/Trello_quora-master/quora-api/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Trello_quora-master/quora-api/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/Trello_quora-master/quora-api/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trello_quora-master/quora-api/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/Trello_quora-master/quora-api/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trello_quora-master/quora-api/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/Trello_quora-master/quora-api/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Trello_quora-master/quora-api/target/quora-api-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Trello_quora-master/quora-api/target/quora-api-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trello_quora-master/quora-api/target/test-classes/com/upgrad/quora/api/controller/UserControllerTest.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Trello_quora-master/quora-db/target/classes/config/localhost.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Trello_quora-master/quora-db/target/classes/config/localhost.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trello_quora-master/quora-db/target/classes/sql/quora.sql" beforeDir="false" afterPath="$PROJECT_DIR$/Trello_quora-master/quora-db/target/classes/sql/quora.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trello_quora-master/quora-db/target/classes/sql/quora_test.sql" beforeDir="false" afterPath="$PROJECT_DIR$/Trello_quora-master/quora-db/target/classes/sql/quora_test.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Trello_quora-master/quora-db/target/quora-db.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Trello_quora-master/quora-db/target/quora-db.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trello_quora-master/quora-service/target/classes/com/upgrad/quora/service/ServiceConfiguration.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trello_quora-master/quora-service/target/classes/com/upgrad/quora/service/business/CommonBusinessService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trello_quora-master/quora-service/target/classes/com/upgrad/quora/service/business/JwtTokenProvider.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trello_quora-master/quora-service/target/classes/com/upgrad/quora/service/business/PasswordCryptographyProvider.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trello_quora-master/quora-service/target/classes/com/upgrad/quora/service/business/QuestionService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trello_quora-master/quora-service/target/classes/com/upgrad/quora/service/business/UserBusinessService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trello_quora-master/quora-service/target/classes/com/upgrad/quora/service/common/ErrorCode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trello_quora-master/quora-service/target/classes/com/upgrad/quora/service/common/GenericErrorCode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trello_quora-master/quora-service/target/classes/com/upgrad/quora/service/common/UnexpectedException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trello_quora-master/quora-service/target/classes/com/upgrad/quora/service/dao/QuestionDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trello_quora-master/quora-service/target/classes/com/upgrad/quora/service/dao/UserAuthDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trello_quora-master/quora-service/target/classes/com/upgrad/quora/service/dao/UserDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trello_quora-master/quora-service/target/classes/com/upgrad/quora/service/entity/QuestionEntity.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trello_quora-master/quora-service/target/classes/com/upgrad/quora/service/entity/UserAuthEntity.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trello_quora-master/quora-service/target/classes/com/upgrad/quora/service/entity/UsersEntity.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trello_quora-master/quora-service/target/classes/com/upgrad/quora/service/exception/AnswerNotFoundException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trello_quora-master/quora-service/target/classes/com/upgrad/quora/service/exception/AuthenticationFailedException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trello_quora-master/quora-service/target/classes/com/upgrad/quora/service/exception/AuthorizationFailedException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trello_quora-master/quora-service/target/classes/com/upgrad/quora/service/exception/InvalidQuestionException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trello_quora-master/quora-service/target/classes/com/upgrad/quora/service/exception/SignOutRestrictedException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trello_quora-master/quora-service/target/classes/com/upgrad/quora/service/exception/SignUpRestrictedException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trello_quora-master/quora-service/target/classes/com/upgrad/quora/service/exception/UserNotFoundException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Trello_quora-master/quora-service/src/main/java/com/upgrad/quora/service/business/CommonBusinessService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Trello_quora-master/quora-service/src/main/java/com/upgrad/quora/service/business/CommonBusinessService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Trello_quora-master/quora-service/src/main/java/com/upgrad/quora/service/dao/UserAuthDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/Trello_quora-master/quora-service/src/main/java/com/upgrad/quora/service/dao/UserAuthDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Trello_quora-master/quora-service/src/main/java/com/upgrad/quora/service/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/Trello_quora-master/quora-service/src/main/java/com/upgrad/quora/service/dao/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Trello_quora-master/quora-service/src/main/java/com/upgrad/quora/service/entity/UserAuthEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/Trello_quora-master/quora-service/src/main/java/com/upgrad/quora/service/entity/UserAuthEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Trello_quora-master/quora-service/src/main/java/com/upgrad/quora/service/entity/UsersEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/Trello_quora-master/quora-service/src/main/java/com/upgrad/quora/service/entity/UsersEntity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Trello_quora-master/quora-service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/Trello_quora-master/quora-service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Trello_quora-master/quora-service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/Trello_quora-master/quora-service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Trello_quora-master/quora-service/target/quora-service-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Trello_quora-master/quora-service/target/quora-service-1.0-SNAPSHOT.jar" afterDir="false" />
@@ -359,6 +350,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-2" y="0" width="1924" height="1051" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2593583" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -374,10 +366,10 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.33260393" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.33260393" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32932165" />
+      <window_info active="true" anchor="bottom" id="Messages" order="10" visible="true" weight="0.32932165" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
