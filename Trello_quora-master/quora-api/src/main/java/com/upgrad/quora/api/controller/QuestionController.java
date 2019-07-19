@@ -32,7 +32,8 @@ public class QuestionController {
     private CommonBusinessService commonBusinessService;
 
     @RequestMapping(method = RequestMethod.POST, path = "/question/create", consumes = MediaType.APPLICATION_JSON_UTF8_VALUE, produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
-    public ResponseEntity<QuestionResponse> createQuestion(@RequestHeader("authorization") final String authorization, final QuestionRequest questionRequest) throws AuthorizationFailedException {
+    public ResponseEntity<QuestionResponse> createQuestion(@RequestHeader("authorization") final String authorization, final QuestionRequest questionRequest)
+                                                            throws AuthorizationFailedException {
 
     final UserAuthEntity userAuthEntity = commonBusinessService.validateAuthToken(authorization);
 
@@ -49,7 +50,7 @@ public class QuestionController {
     @RequestMapping(method = RequestMethod.GET, path = "/question/all", produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
     public ResponseEntity<List<QuestionResponse>> getAllQuestions(@RequestHeader("authorization") final String authorization) throws AuthorizationFailedException {
 
-        final UserAuthEntity userAuthTokenEntity = commonBusinessService.validateAuthToken(authorization);
+        final UserAuthEntity userAuthTokenEntity = commonBusinessService.getAllValidateAuthToken(authorization);
 
         final List<QuestionEntity> questionEntities = questionService.getAllQuestions();
 
@@ -69,7 +70,7 @@ public class QuestionController {
                                                          final QuestionRequest questionRequest)
             throws AuthenticationFailedException, AuthorizationFailedException, InvalidQuestionException {
 
-        final UserAuthEntity userAuthEntity = commonBusinessService.validateAuthToken(authorization);
+        final UserAuthEntity userAuthEntity = commonBusinessService.editValidateAuthToken(authorization);
 
         final QuestionEntity editedQuestionEntity = questionService.getQuestion(questionId, authorization);
         editedQuestionEntity.setContent(questionRequest.getContent());
@@ -87,7 +88,7 @@ public class QuestionController {
                                                            @RequestHeader("authorization") final String authorization)
             throws AuthenticationFailedException, AuthorizationFailedException, InvalidQuestionException {
 
-        final UserAuthEntity userAuthEntity = commonBusinessService.validateAuthToken(authorization);
+        final UserAuthEntity userAuthEntity = commonBusinessService.deleteValidateAuthToken(authorization);
 
         final QuestionEntity deleteQuestionEntity = questionService.getQuestion(questionId, authorization);
 
