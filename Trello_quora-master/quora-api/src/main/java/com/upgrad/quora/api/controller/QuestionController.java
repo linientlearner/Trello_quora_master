@@ -10,6 +10,7 @@ import com.upgrad.quora.service.entity.UserAuthEntity;
 import com.upgrad.quora.service.exception.AuthenticationFailedException;
 import com.upgrad.quora.service.exception.AuthorizationFailedException;
 import com.upgrad.quora.service.exception.InvalidQuestionException;
+import com.upgrad.quora.service.exception.UserNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
@@ -32,7 +33,8 @@ public class QuestionController {
     private CommonBusinessService commonBusinessService;
 
     @RequestMapping(method = RequestMethod.POST, path = "/question/create", consumes = MediaType.APPLICATION_JSON_UTF8_VALUE, produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
-    public ResponseEntity<QuestionResponse> createQuestion(@RequestHeader("authorization") final String authorization, final QuestionRequest questionRequest)
+    public ResponseEntity<QuestionResponse> createQuestion(@RequestHeader("authorization") final String authorization,
+                                                            final QuestionRequest questionRequest)
                                                             throws AuthorizationFailedException {
 
     final UserAuthEntity userAuthEntity = commonBusinessService.validateAuthToken(authorization);
@@ -48,7 +50,8 @@ public class QuestionController {
     }
 
     @RequestMapping(method = RequestMethod.GET, path = "/question/all", produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
-    public ResponseEntity<List<QuestionResponse>> getAllQuestions(@RequestHeader("authorization") final String authorization) throws AuthorizationFailedException {
+    public ResponseEntity<List<QuestionResponse>> getAllQuestions(@RequestHeader("authorization") final String authorization)
+                                                                  throws AuthorizationFailedException {
 
         final UserAuthEntity userAuthTokenEntity = commonBusinessService.getAllValidateAuthToken(authorization);
 
@@ -68,7 +71,7 @@ public class QuestionController {
     public ResponseEntity<QuestionResponse> editQuestion(@PathVariable("questionId") final String questionId,
                                                          @RequestHeader("authorization") final String authorization,
                                                          final QuestionRequest questionRequest)
-            throws AuthenticationFailedException, AuthorizationFailedException, InvalidQuestionException {
+                                                         throws AuthenticationFailedException, AuthorizationFailedException, InvalidQuestionException {
 
         final UserAuthEntity userAuthEntity = commonBusinessService.editValidateAuthToken(authorization);
 
@@ -86,7 +89,7 @@ public class QuestionController {
     @RequestMapping(method = RequestMethod.DELETE, path = "/question/delete/{questionId}", produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
     public ResponseEntity<QuestionResponse> deleteQuestion(@PathVariable("questionId") final String questionId,
                                                            @RequestHeader("authorization") final String authorization)
-            throws AuthenticationFailedException, AuthorizationFailedException, InvalidQuestionException {
+                                                           throws AuthenticationFailedException, AuthorizationFailedException, InvalidQuestionException {
 
         final UserAuthEntity userAuthEntity = commonBusinessService.deleteValidateAuthToken(authorization);
 
@@ -98,5 +101,25 @@ public class QuestionController {
 
         QuestionResponse questionResponse = new QuestionResponse().id(deletedQuestionUuid).status("QUESTION DELETED");
         return new ResponseEntity<QuestionResponse>(questionResponse, HttpStatus.OK);
+    }
+
+    @RequestMapping(method = RequestMethod.GET, path = "question/all/{userId}", produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
+    public ResponseEntity<List<QuestionResponse>> getAllQuestions(@PathVariable("userId") final String userId,
+                                                                  @RequestHeader("authorization") final String authorization)
+                                                                  throws AuthorizationFailedException, UserNotFoundException {
+
+        final UserAuthEntity userAuthEntity = commonBusinessService.byUserValidateAuthToken(authorization);
+
+        final List<QuestionEntity> questionEntities = questionService.getQuestionListByUser(userId);
+
+        List<QuestionResponse> questionResponse = new ArrayList<QuestionResponse>();
+        QuestionResponse questionSingleResponse = new QuestionResponse();
+
+        for (int i = 0; i < questionEntities.size(); i++) {
+            questionResponse.add(questionSingleResponse.id(questionEntities.get(i).getUuid())
+                    .status(questionEntities.get(i).getContent()));
+        }
+        return new ResponseEntity<List<QuestionResponse>>(questionResponse, HttpStatus.OK);
+
     }
 }

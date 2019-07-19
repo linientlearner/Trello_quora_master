@@ -44,8 +44,15 @@ public class RestExceptionHandler {
     }
 
     @ExceptionHandler(InvalidQuestionException.class)
-
     public ResponseEntity<ErrorResponse> resourceNotFoundException(InvalidQuestionException exc, WebRequest request){
+        return new ResponseEntity<ErrorResponse>(new ErrorResponse()
+                .code(exc.getCode())
+                .message(exc.getErrorMessage()),
+                HttpStatus.NOT_FOUND);
+    }
+
+    @ExceptionHandler(UserNotFoundException.class)
+    public ResponseEntity<ErrorResponse> resourceNotFoundException(UserNotFoundException exc, WebRequest request){
         return new ResponseEntity<ErrorResponse>(new ErrorResponse()
                 .code(exc.getCode())
                 .message(exc.getErrorMessage()),
