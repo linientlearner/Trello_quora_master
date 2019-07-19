@@ -23,8 +23,8 @@ public class AdminController {
 
         UserEntity user = adminBusinessService.userDelete(userid, authorization);
         UserDeleteResponse response = new UserDeleteResponse()
-                                            .id(user.getUuid())
-                                            .status("USER SUCCESSFULLY DELETED");
+                .id(user.getUuid())
+                .status("USER SUCCESSFULLY DELETED");
         return new ResponseEntity<UserDeleteResponse>(response, HttpStatus.OK);
 
     }
