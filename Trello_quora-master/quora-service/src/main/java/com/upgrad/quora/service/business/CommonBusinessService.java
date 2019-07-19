@@ -36,7 +36,6 @@ public class CommonBusinessService {
 
         return usersEntity;
     }
-<<<<<<< HEAD
 
     public UserAuthEntity validateAuthToken(String accessToken) throws AuthorizationFailedException{
 
@@ -102,6 +101,4 @@ public class CommonBusinessService {
         }
         return userAuthEntity;
     }
-=======
->>>>>>> 00590ef3062d0929c544084faa727352a7c21fec
 }

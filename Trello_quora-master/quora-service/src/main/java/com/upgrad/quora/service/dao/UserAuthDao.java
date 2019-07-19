@@ -9,32 +9,21 @@ import javax.persistence.PersistenceContext;
 
 @Repository
 public class UserAuthDao {
-<<<<<<< HEAD
 
-    @PersistenceContext
-    private EntityManager entityManager;
-
-    public UserAuthEntity getAuthToken(final String authorizationToken){
-        try{
-            UserAuthEntity userAuthEntity = entityManager.createNamedQuery("userAuthTokenByAccessToken", UserAuthEntity.class).setParameter("accessToken", authorizationToken).getSingleResult();
-            return userAuthEntity;
-        }
-        catch (NoResultException nre){
-=======
     @PersistenceContext
     private EntityManager entityManager;
 
     //Method receives the access token and checks if the user is logged in
-    public UserAuthEntity getAuthToken(String accessToken) {
+    public UserAuthEntity getAuthToken(final String authorizationToken) {
         try {
-            return entityManager.createNamedQuery("userAuthTokenByAccessToken", UserAuthEntity.class).setParameter("accessToken", accessToken).getSingleResult();
-        } catch(NoResultException nre) {
->>>>>>> 00590ef3062d0929c544084faa727352a7c21fec
+            UserAuthEntity userAuthEntity = entityManager.createNamedQuery("userAuthTokenByAccessToken", UserAuthEntity.class).setParameter("accessToken", authorizationToken).getSingleResult();
+            return userAuthEntity;
+        } catch (NoResultException nre) {
             return null;
         }
     }
 
-<<<<<<< HEAD
+
     public UserAuthEntity createAuthToken(UserAuthEntity userAuthEntity){
         entityManager.persist(userAuthEntity);
         return userAuthEntity;
@@ -44,6 +33,5 @@ public class UserAuthDao {
         entityManager.merge(userAuthEntity);
         return userAuthEntity;
     }
-=======
->>>>>>> 00590ef3062d0929c544084faa727352a7c21fec
+
 }

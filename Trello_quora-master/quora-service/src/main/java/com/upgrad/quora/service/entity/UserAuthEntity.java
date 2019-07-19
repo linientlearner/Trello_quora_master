@@ -1,6 +1,5 @@
 package com.upgrad.quora.service.entity;
 
-<<<<<<< HEAD
 import org.apache.commons.lang3.builder.EqualsBuilder;
 import org.apache.commons.lang3.builder.HashCodeBuilder;
 import org.hibernate.annotations.OnDelete;
@@ -116,12 +115,3 @@ public class UserAuthEntity {
         return new HashCodeBuilder().append(this).hashCode();
     }
 }
-=======
-import java.time.ZonedDateTime;
-
-public class UserAuthEntity {
-    public ZonedDateTime getLogoutAt() {
-        return null;
-    }
-}
->>>>>>> 00590ef3062d0929c544084faa727352a7c21fec

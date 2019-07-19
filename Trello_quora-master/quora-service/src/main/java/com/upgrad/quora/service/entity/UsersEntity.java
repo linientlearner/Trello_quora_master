@@ -1,14 +1,8 @@
 package com.upgrad.quora.service.entity;
 
-<<<<<<< HEAD
-import org.apache.commons.lang3.builder.EqualsBuilder;
-import org.apache.commons.lang3.builder.HashCodeBuilder;
-=======
-
 import org.apache.commons.lang3.builder.EqualsBuilder;
 import org.apache.commons.lang3.builder.HashCodeBuilder;
 import org.apache.commons.lang3.builder.ToStringExclude;
->>>>>>> 00590ef3062d0929c544084faa727352a7c21fec
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
@@ -59,21 +53,15 @@ public class UsersEntity implements Serializable {
 
     @Column(name = "password")
     @Size(max = 255)
-<<<<<<< HEAD
-    //@ToStringExclude
-=======
+
     @ToStringExclude
->>>>>>> 00590ef3062d0929c544084faa727352a7c21fec
     @NotNull
     private String password;
 
     @Column(name = "salt")
     @Size(max = 200)
-<<<<<<< HEAD
-    //@ToStringExclude
-=======
+
     @ToStringExclude
->>>>>>> 00590ef3062d0929c544084faa727352a7c21fec
     @NotNull
     private String salt;
 
@@ -97,10 +85,6 @@ public class UsersEntity implements Serializable {
     @Size(max = 30)
     private String contactNumber;
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 00590ef3062d0929c544084faa727352a7c21fec
     public Integer getId() {
         return id;
     }
@@ -214,8 +198,4 @@ public class UsersEntity implements Serializable {
     public int hashCode() {
         return new HashCodeBuilder().append(this).hashCode();
     }
-<<<<<<< HEAD
-=======
-
->>>>>>> 00590ef3062d0929c544084faa727352a7c21fec
 }

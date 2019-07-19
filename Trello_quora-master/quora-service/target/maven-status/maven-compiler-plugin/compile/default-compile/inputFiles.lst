@@ -1,5 +1,4 @@
 /mnt/Drive/Java/Trello_quora_master/Trello_quora-master/quora-service/src/main/java/com/upgrad/quora/service/exception/SignOutRestrictedException.java
-<<<<<<< HEAD
 /mnt/Drive/Java/Trello_quora_master/Trello_quora-master/quora-service/src/main/java/com/upgrad/quora/service/business/QuestionService.java
 /mnt/Drive/Java/Trello_quora_master/Trello_quora-master/quora-service/src/main/java/com/upgrad/quora/service/exception/AuthorizationFailedException.java
 /mnt/Drive/Java/Trello_quora_master/Trello_quora-master/quora-service/src/main/java/com/upgrad/quora/service/entity/QuestionEntity.java
@@ -9,26 +8,17 @@
 /mnt/Drive/Java/Trello_quora_master/Trello_quora-master/quora-service/src/main/java/com/upgrad/quora/service/exception/UserNotFoundException.java
 /mnt/Drive/Java/Trello_quora_master/Trello_quora-master/quora-service/src/main/java/com/upgrad/quora/service/common/UnexpectedException.java
 /mnt/Drive/Java/Trello_quora_master/Trello_quora-master/quora-service/src/main/java/com/upgrad/quora/service/dao/UserAuthDao.java
+/mnt/Drive/Java/Trello_quora_master/Trello_quora-master/quora-service/src/main/java/com/upgrad/quora/service/dao/AdminDao.java
+/mnt/Drive/Java/Trello_quora_master/Trello_quora-master/quora-service/src/main/java/com/upgrad/quora/service/business/AdminBusinessService.java
 /mnt/Drive/Java/Trello_quora_master/Trello_quora-master/quora-service/src/main/java/com/upgrad/quora/service/business/CommonBusinessService.java
-=======
-/mnt/Drive/Java/Trello_quora_master/Trello_quora-master/quora-service/src/main/java/com/upgrad/quora/service/exception/AuthorizationFailedException.java
-/mnt/Drive/Java/Trello_quora_master/Trello_quora-master/quora-service/src/main/java/com/upgrad/quora/service/exception/SignUpRestrictedException.java
-/mnt/Drive/Java/Trello_quora_master/Trello_quora-master/quora-service/src/main/java/com/upgrad/quora/service/exception/InvalidQuestionException.java
-/mnt/Drive/Java/Trello_quora_master/Trello_quora-master/quora-service/src/main/java/com/upgrad/quora/service/exception/UserNotFoundException.java
-/mnt/Drive/Java/Trello_quora_master/Trello_quora-master/quora-service/src/main/java/com/upgrad/quora/service/common/UnexpectedException.java
->>>>>>> 00590ef3062d0929c544084faa727352a7c21fec
 /mnt/Drive/Java/Trello_quora_master/Trello_quora-master/quora-service/src/main/java/com/upgrad/quora/service/business/JwtTokenProvider.java
 /mnt/Drive/Java/Trello_quora_master/Trello_quora-master/quora-service/src/main/java/com/upgrad/quora/service/common/GenericErrorCode.java
 /mnt/Drive/Java/Trello_quora_master/Trello_quora-master/quora-service/src/main/java/com/upgrad/quora/service/common/ErrorCode.java
 /mnt/Drive/Java/Trello_quora_master/Trello_quora-master/quora-service/src/main/java/com/upgrad/quora/service/ServiceConfiguration.java
 /mnt/Drive/Java/Trello_quora_master/Trello_quora-master/quora-service/src/main/java/com/upgrad/quora/service/business/PasswordCryptographyProvider.java
 /mnt/Drive/Java/Trello_quora_master/Trello_quora-master/quora-service/src/main/java/com/upgrad/quora/service/exception/AuthenticationFailedException.java
-<<<<<<< HEAD
 /mnt/Drive/Java/Trello_quora_master/Trello_quora-master/quora-service/src/main/java/com/upgrad/quora/service/business/UserBusinessService.java
 /mnt/Drive/Java/Trello_quora_master/Trello_quora-master/quora-service/src/main/java/com/upgrad/quora/service/exception/AnswerNotFoundException.java
 /mnt/Drive/Java/Trello_quora_master/Trello_quora-master/quora-service/src/main/java/com/upgrad/quora/service/entity/UserAuthEntity.java
 /mnt/Drive/Java/Trello_quora_master/Trello_quora-master/quora-service/src/main/java/com/upgrad/quora/service/dao/UserDao.java
 /mnt/Drive/Java/Trello_quora_master/Trello_quora-master/quora-service/src/main/java/com/upgrad/quora/service/entity/UsersEntity.java
-=======
-/mnt/Drive/Java/Trello_quora_master/Trello_quora-master/quora-service/src/main/java/com/upgrad/quora/service/exception/AnswerNotFoundException.java
->>>>>>> 00590ef3062d0929c544084faa727352a7c21fec
