@@ -65,6 +65,7 @@
                         <generateApis>false</generateApis>
                         <generateModels>true</generateModels>
                         <modelPackage>com.upgrad.quora.api.model</modelPackage>
+
                         <configOptions>
                             <java8>true</java8>
                             <sourceFolder>.</sourceFolder>

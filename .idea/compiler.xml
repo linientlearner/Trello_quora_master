@@ -6,13 +6,10 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="maven-archiver (3)" />
-        <module name="quora-api" />
-        <module name="swagger-spring" />
-        <module name="quora-service" />
         <module name="quora-db" />
-        <module name="maven-archiver (1)" />
-        <module name="maven-archiver (2)" />
+        <module name="quora-service" />
+        <module name="generated-sources" />
+        <module name="quora-api" />
       </profile>
     </annotationProcessing>
   </component>
