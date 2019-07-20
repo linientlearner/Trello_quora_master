@@ -8,8 +8,6 @@
 /mnt/Drive/Java/Trello_quora_master/Trello_quora-master/quora-service/src/main/java/com/upgrad/quora/service/exception/UserNotFoundException.java
 /mnt/Drive/Java/Trello_quora_master/Trello_quora-master/quora-service/src/main/java/com/upgrad/quora/service/common/UnexpectedException.java
 /mnt/Drive/Java/Trello_quora_master/Trello_quora-master/quora-service/src/main/java/com/upgrad/quora/service/dao/UserAuthDao.java
-/mnt/Drive/Java/Trello_quora_master/Trello_quora-master/quora-service/src/main/java/com/upgrad/quora/service/dao/AdminDao.java
-/mnt/Drive/Java/Trello_quora_master/Trello_quora-master/quora-service/src/main/java/com/upgrad/quora/service/business/AdminBusinessService.java
 /mnt/Drive/Java/Trello_quora_master/Trello_quora-master/quora-service/src/main/java/com/upgrad/quora/service/business/CommonBusinessService.java
 /mnt/Drive/Java/Trello_quora_master/Trello_quora-master/quora-service/src/main/java/com/upgrad/quora/service/business/JwtTokenProvider.java
 /mnt/Drive/Java/Trello_quora_master/Trello_quora-master/quora-service/src/main/java/com/upgrad/quora/service/common/GenericErrorCode.java

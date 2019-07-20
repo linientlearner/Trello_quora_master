@@ -13,16 +13,15 @@ public class UserAuthDao {
     @PersistenceContext
     private EntityManager entityManager;
 
-    //Method receives the access token and checks if the user is logged in
-    public UserAuthEntity getAuthToken(final String authorizationToken) {
-        try {
+    public UserAuthEntity getAuthToken(final String authorizationToken){
+        try{
             UserAuthEntity userAuthEntity = entityManager.createNamedQuery("userAuthTokenByAccessToken", UserAuthEntity.class).setParameter("accessToken", authorizationToken).getSingleResult();
             return userAuthEntity;
-        } catch (NoResultException nre) {
+        }
+        catch (NoResultException nre){
             return null;
         }
     }
-
 
     public UserAuthEntity createAuthToken(UserAuthEntity userAuthEntity){
         entityManager.persist(userAuthEntity);
@@ -33,5 +32,4 @@ public class UserAuthDao {
         entityManager.merge(userAuthEntity);
         return userAuthEntity;
     }
-
 }
