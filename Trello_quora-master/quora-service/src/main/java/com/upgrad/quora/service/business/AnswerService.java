@@ -15,6 +15,7 @@ import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.time.ZonedDateTime;
+import java.util.List;
 
 @Service
 public class AnswerService {
@@ -37,7 +38,7 @@ public class AnswerService {
             throw new AuthorizationFailedException("ATHR-002", "User is signed out. Sign in first to post an answer.");
         }
 
-        //Check if the question entered is invalid
+        //Check if the question entered is valid
         QuestionEntity questionEntity = questionDao.getQuestionByUuid(questionUuid);
         if (questionEntity == null) {
             throw new InvalidQuestionException("QUES-001", "The question entered is invalid.");
@@ -94,5 +95,24 @@ public class AnswerService {
             return deletedAnswer;
         }
         throw new AuthorizationFailedException("ATHR-003", "Only the answer owner or admin can delete the answer.");
+    }
+
+    public List<AnswerEntity> getAllAnswerToQuestion(String questionUuid, String authorization) throws AuthorizationFailedException, InvalidQuestionException {
+        UserAuthEntity userAuthEntity = userAuthDao.getAuthToken(authorization);
+        //Check if User is signed in
+        if (userAuthEntity == null) {
+            throw new AuthorizationFailedException("ATHR-001", "User has not signed in.");
+        } else if (userAuthEntity.getLogoutAt() != null) {
+            throw new AuthorizationFailedException("ATHR-002", "User is signed out. Sign in first to get the answers.");
+        }
+
+        QuestionEntity questionEntity = questionDao.getQuestionByUuid(questionUuid);
+        //Check if the question entered is valid
+        if (questionEntity == null) {
+            throw new InvalidQuestionException("QUES-001", "The question with entered uuid whose details are to be seen does not exist.");
+        }
+
+        List<AnswerEntity> answerEntities = answerDao.getAllAnswerToQuestion(questionEntity);
+        return answerEntities;
     }
 }
