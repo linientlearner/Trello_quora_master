@@ -51,7 +51,7 @@ public class AnswerService {
     @Transactional(propagation = Propagation.REQUIRED)
     public AnswerEntity editAnswerContents(AnswerEntity ansEditEntity, String answerId, String authorization) throws AuthorizationFailedException, AnswerNotFoundException {
         UserAuthEntity userAuthEntity = userAuthDao.getAuthToken(authorization);
-
+        //Check if User is signed in
         if (userAuthEntity == null) {
             throw new AuthorizationFailedException("ATHR-001", "User has not signed in.");
 
@@ -60,6 +60,7 @@ public class AnswerService {
         }
 
         AnswerEntity answerEntity = answerDao.getAnswerByAnswerUuid(answerId);
+        //Check if Answer is valid or owned by the User
         if (answerEntity == null) {
             throw new AnswerNotFoundException("ANS-001", "Entered answer uuid does not exist.");
         } else if (userAuthEntity.getUser() != answerEntity.getUser()) {
@@ -69,5 +70,29 @@ public class AnswerService {
             answerEntity.setDate(ZonedDateTime.now());
             return answerDao.editAnsContents(answerEntity);
         }
+    }
+
+    public AnswerEntity deleteAnswer(String answerId, String authorization) throws AnswerNotFoundException, AuthorizationFailedException {
+        AnswerEntity answerEntity = answerDao.getAnswerByAnswerUuid(answerId);
+        //Check if Answer Exists
+        if (answerEntity == null) {
+            throw new AnswerNotFoundException("ANS-001", "Entered answer uuid does not exist");
+        }
+
+        UserAuthEntity userAuthEntity = userAuthDao.getAuthToken(authorization);
+        //Check if User is signed in
+        if (userAuthEntity == null) {
+            throw new AuthorizationFailedException("ATHR-001", "User has not signed in.");
+        } else if (userAuthEntity.getLogoutAt() != null) {
+            throw new AuthorizationFailedException("ATHR-002", "User is signed out. Sign in first to delete an answer.");
+        }
+
+        String role = userAuthEntity.getUser().getRole();
+        //Check if Answer owned by the User or User is Admin
+        if (role.equals("admin") || (answerEntity.getUser() == userAuthEntity.getUser())) {
+            AnswerEntity deletedAnswer = answerDao.deleteAnswer(answerEntity);
+            return deletedAnswer;
+        }
+        throw new AuthorizationFailedException("ATHR-003", "Only the answer owner or admin can delete the answer.");
     }
 }

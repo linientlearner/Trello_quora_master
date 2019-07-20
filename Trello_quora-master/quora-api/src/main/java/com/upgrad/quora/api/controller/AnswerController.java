@@ -34,9 +34,9 @@ public class AnswerController {
         final AnswerResponse createdAnswerResponse = new AnswerResponse().id(createdAnswer.getUuid()).status("ANSWER CREATED");
 
         return new ResponseEntity<AnswerResponse>(createdAnswerResponse, HttpStatus.CREATED);
-
     }
 
+    //Method to Edit Answer
     @RequestMapping(method = RequestMethod.PUT, path = "/answer/edit/{answerId}", consumes = MediaType.APPLICATION_JSON_UTF8_VALUE, produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
     public ResponseEntity<AnswerEditResponse> editAnswerContent(final AnswerEditRequest answerEditRequest, @PathVariable(value = "answerId") final String answerId, @RequestHeader(value = "authorization") final String authorization) throws AuthorizationFailedException, AnswerNotFoundException {
         AnswerEntity ansEditEntity = new AnswerEntity();
@@ -49,5 +49,13 @@ public class AnswerController {
         final AnswerEditResponse answerEditResponse = new AnswerEditResponse().id(ansEdited.getUuid()).status("ANSWER EDITED");
 
         return new ResponseEntity<AnswerEditResponse>(answerEditResponse, HttpStatus.OK);
+    }
+
+    //Method to Delete Answer
+    @RequestMapping(method = RequestMethod.DELETE, path = "/answer/delete/{answerId}", produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
+    public ResponseEntity<AnswerDeleteResponse> deleteAnswer(@PathVariable(value = "answerId") final String answerId, @RequestHeader("authorization") final String authorization)throws AuthorizationFailedException, AnswerNotFoundException {
+        final AnswerEntity deletedAns = answerService.deleteAnswer(answerId, authorization);
+        AnswerDeleteResponse deletedAnsResponse = new AnswerDeleteResponse().id(deletedAns.getUuid()).status("ANSWER DELETED");
+        return new ResponseEntity<AnswerDeleteResponse>(deletedAnsResponse, HttpStatus.OK);
     }
 }
