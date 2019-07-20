@@ -2,8 +2,11 @@ package com.upgrad.quora.api.controller;
 
 
 import com.upgrad.quora.api.model.*;
+import com.upgrad.quora.service.business.CommonBusinessService;
 import com.upgrad.quora.service.business.QuestionService;
 import com.upgrad.quora.service.entity.QuestionEntity;
+import com.upgrad.quora.service.entity.UserAuthEntity;
+import com.upgrad.quora.service.exception.AuthenticationFailedException;
 import com.upgrad.quora.service.exception.AuthorizationFailedException;
 import com.upgrad.quora.service.exception.InvalidQuestionException;
 import com.upgrad.quora.service.exception.UserNotFoundException;
@@ -15,6 +18,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.time.ZonedDateTime;
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.UUID;
 
@@ -36,7 +40,7 @@ public class QuestionController {
     @RequestMapping(method = RequestMethod.POST, path = "/question/create", consumes = MediaType.APPLICATION_JSON_UTF8_VALUE, produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
     public ResponseEntity<QuestionResponse> createQuestion(@RequestHeader("authorization") final String authorization,
                                                            final QuestionRequest questionRequest)
-                                                            throws AuthorizationFailedException {
+            throws AuthorizationFailedException {
 
         final QuestionEntity questionEntity = new QuestionEntity();
         questionEntity.setUuid(UUID.randomUUID().toString());
@@ -79,7 +83,7 @@ public class QuestionController {
     public ResponseEntity<QuestionEditResponse> editQuestion(@PathVariable("questionId") final String questionId,
                                                              @RequestHeader("authorization") final String authorization,
                                                              final QuestionRequest questionEditRequest)
-                                                             throws  AuthorizationFailedException, InvalidQuestionException {
+            throws  AuthorizationFailedException, InvalidQuestionException {
 
         final QuestionEntity editQuestionEntity = new QuestionEntity();
         editQuestionEntity.setContent(questionEditRequest.getContent());
@@ -98,8 +102,8 @@ public class QuestionController {
     // Exceptions - Authorization Failed Exception and Invalid Question
     @RequestMapping(method = RequestMethod.DELETE, path = "/question/delete/{questionId}", produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
     public ResponseEntity<QuestionDeleteResponse> deleteQuestion(@PathVariable("questionId") final String questionId,
-                                                           @RequestHeader("authorization") final String authorization)
-                                                           throws AuthorizationFailedException, InvalidQuestionException {
+                                                                 @RequestHeader("authorization") final String authorization)
+            throws AuthorizationFailedException, InvalidQuestionException {
 
         final String deletedQuestionEntityUuid = questionService.deleteQuestionEntity(questionId, authorization);
         QuestionDeleteResponse questionDeleteResponse = new QuestionDeleteResponse().id(deletedQuestionEntityUuid).status("QUESTION DELETED");
@@ -114,14 +118,14 @@ public class QuestionController {
     // Exceptions - Authorization Failed Exception and UserNotFound Exception
     @RequestMapping(method = RequestMethod.GET, path = "question/all/{userId}", produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
     public ResponseEntity<List<QuestionDetailsResponse>> getAllQuestions(@PathVariable("userId") final String userId,
-                                                                  @RequestHeader("authorization") final String authorization)
-                                                                  throws AuthorizationFailedException, UserNotFoundException {
+                                                                         @RequestHeader("authorization") final String authorization)
+            throws AuthorizationFailedException, UserNotFoundException {
 
         final List<QuestionEntity> questionEntities = questionService.getQuestionListByUser(userId, authorization);
         List<QuestionDetailsResponse> questionDetailsResponseList  = new ArrayList<>();
         for(QuestionEntity questionEntity:questionEntities) {
             QuestionDetailsResponse questionDetailsResponse = new QuestionDetailsResponse().id(questionEntity.getUuid())
-                                                              .content(questionEntity.getContent());
+                    .content(questionEntity.getContent());
             questionDetailsResponseList.add(questionDetailsResponse);
         }
 
