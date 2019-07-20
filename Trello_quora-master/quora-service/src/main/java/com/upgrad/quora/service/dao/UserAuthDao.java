@@ -9,16 +9,27 @@ import javax.persistence.PersistenceContext;
 
 @Repository
 public class UserAuthDao {
+
     @PersistenceContext
     private EntityManager entityManager;
 
-    //Method receives the access token and checks if the user is logged in
-    public UserAuthEntity getAuthToken(String accessToken) {
-        try {
-            return entityManager.createNamedQuery("userAuthTokenByAccessToken", UserAuthEntity.class).setParameter("accessToken", accessToken).getSingleResult();
-        } catch(NoResultException nre) {
+    public UserAuthEntity getAuthToken(final String authorizationToken){
+        try{
+            UserAuthEntity userAuthEntity = entityManager.createNamedQuery("userAuthTokenByAccessToken", UserAuthEntity.class).setParameter("accessToken", authorizationToken).getSingleResult();
+            return userAuthEntity;
+        }
+        catch (NoResultException nre){
             return null;
         }
     }
 
+    public UserAuthEntity createAuthToken(UserAuthEntity userAuthEntity){
+        entityManager.persist(userAuthEntity);
+        return userAuthEntity;
+    }
+
+    public UserAuthEntity logOut(UserAuthEntity userAuthEntity) {
+        entityManager.merge(userAuthEntity);
+        return userAuthEntity;
+    }
 }

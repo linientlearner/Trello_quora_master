@@ -1,9 +1,7 @@
 package com.upgrad.quora.service.entity;
 
-
 import org.apache.commons.lang3.builder.EqualsBuilder;
 import org.apache.commons.lang3.builder.HashCodeBuilder;
-import org.apache.commons.lang3.builder.ToStringExclude;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
@@ -54,13 +52,13 @@ public class UsersEntity implements Serializable {
 
     @Column(name = "password")
     @Size(max = 255)
-    @ToStringExclude
+    //@ToStringExclude
     @NotNull
     private String password;
 
     @Column(name = "salt")
     @Size(max = 200)
-    @ToStringExclude
+    //@ToStringExclude
     @NotNull
     private String salt;
 
@@ -83,6 +81,7 @@ public class UsersEntity implements Serializable {
     @Column(name = "contactnumber")
     @Size(max = 30)
     private String contactNumber;
+
 
     public Integer getId() {
         return id;
@@ -197,5 +196,4 @@ public class UsersEntity implements Serializable {
     public int hashCode() {
         return new HashCodeBuilder().append(this).hashCode();
     }
-
 }
