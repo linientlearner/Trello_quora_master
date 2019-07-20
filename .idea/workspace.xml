@@ -4,8 +4,38 @@
     <list default="true" id="af596f5d-5fe4-4a10-b0ef-af900f94fbbd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Trello_quora-master/quora-api/src/main/java/com/upgrad/quora/api/controller/AnswerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Trello_quora-master/quora-api/src/main/java/com/upgrad/quora/api/controller/AnswerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Trello_quora-master/quora-api/target/classes/com/upgrad/quora/api/controller/AnswerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/Trello_quora-master/quora-api/target/classes/com/upgrad/quora/api/controller/AnswerController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Trello_quora-master/quora-api/target/generated-sources/com/upgrad/quora/api/model/AnswerDeleteResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/Trello_quora-master/quora-api/target/generated-sources/com/upgrad/quora/api/model/AnswerDeleteResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Trello_quora-master/quora-api/target/generated-sources/com/upgrad/quora/api/model/AnswerDetailsResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/Trello_quora-master/quora-api/target/generated-sources/com/upgrad/quora/api/model/AnswerDetailsResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Trello_quora-master/quora-api/target/generated-sources/com/upgrad/quora/api/model/AnswerEditRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Trello_quora-master/quora-api/target/generated-sources/com/upgrad/quora/api/model/AnswerEditRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Trello_quora-master/quora-api/target/generated-sources/com/upgrad/quora/api/model/AnswerEditResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/Trello_quora-master/quora-api/target/generated-sources/com/upgrad/quora/api/model/AnswerEditResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Trello_quora-master/quora-api/target/generated-sources/com/upgrad/quora/api/model/AnswerRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Trello_quora-master/quora-api/target/generated-sources/com/upgrad/quora/api/model/AnswerRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Trello_quora-master/quora-api/target/generated-sources/com/upgrad/quora/api/model/AnswerResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/Trello_quora-master/quora-api/target/generated-sources/com/upgrad/quora/api/model/AnswerResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Trello_quora-master/quora-api/target/generated-sources/com/upgrad/quora/api/model/ErrorResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/Trello_quora-master/quora-api/target/generated-sources/com/upgrad/quora/api/model/ErrorResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Trello_quora-master/quora-api/target/generated-sources/com/upgrad/quora/api/model/QuestionDeleteResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/Trello_quora-master/quora-api/target/generated-sources/com/upgrad/quora/api/model/QuestionDeleteResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Trello_quora-master/quora-api/target/generated-sources/com/upgrad/quora/api/model/QuestionDetailsResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/Trello_quora-master/quora-api/target/generated-sources/com/upgrad/quora/api/model/QuestionDetailsResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Trello_quora-master/quora-api/target/generated-sources/com/upgrad/quora/api/model/QuestionEditRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Trello_quora-master/quora-api/target/generated-sources/com/upgrad/quora/api/model/QuestionEditRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Trello_quora-master/quora-api/target/generated-sources/com/upgrad/quora/api/model/QuestionEditResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/Trello_quora-master/quora-api/target/generated-sources/com/upgrad/quora/api/model/QuestionEditResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Trello_quora-master/quora-api/target/generated-sources/com/upgrad/quora/api/model/QuestionRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Trello_quora-master/quora-api/target/generated-sources/com/upgrad/quora/api/model/QuestionRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Trello_quora-master/quora-api/target/generated-sources/com/upgrad/quora/api/model/QuestionResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/Trello_quora-master/quora-api/target/generated-sources/com/upgrad/quora/api/model/QuestionResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Trello_quora-master/quora-api/target/generated-sources/com/upgrad/quora/api/model/SigninResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/Trello_quora-master/quora-api/target/generated-sources/com/upgrad/quora/api/model/SigninResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Trello_quora-master/quora-api/target/generated-sources/com/upgrad/quora/api/model/SignoutResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/Trello_quora-master/quora-api/target/generated-sources/com/upgrad/quora/api/model/SignoutResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Trello_quora-master/quora-api/target/generated-sources/com/upgrad/quora/api/model/SignupUserRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Trello_quora-master/quora-api/target/generated-sources/com/upgrad/quora/api/model/SignupUserRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Trello_quora-master/quora-api/target/generated-sources/com/upgrad/quora/api/model/SignupUserResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/Trello_quora-master/quora-api/target/generated-sources/com/upgrad/quora/api/model/SignupUserResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Trello_quora-master/quora-api/target/generated-sources/com/upgrad/quora/api/model/UserDeleteResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/Trello_quora-master/quora-api/target/generated-sources/com/upgrad/quora/api/model/UserDeleteResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Trello_quora-master/quora-api/target/generated-sources/com/upgrad/quora/api/model/UserDetailsResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/Trello_quora-master/quora-api/target/generated-sources/com/upgrad/quora/api/model/UserDetailsResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Trello_quora-master/quora-api/target/generated-sources/io/swagger/api/ApiException.java" beforeDir="false" afterPath="$PROJECT_DIR$/Trello_quora-master/quora-api/target/generated-sources/io/swagger/api/ApiException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Trello_quora-master/quora-api/target/generated-sources/io/swagger/api/ApiOriginFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/Trello_quora-master/quora-api/target/generated-sources/io/swagger/api/ApiOriginFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Trello_quora-master/quora-api/target/generated-sources/io/swagger/api/ApiResponseMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/Trello_quora-master/quora-api/target/generated-sources/io/swagger/api/ApiResponseMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Trello_quora-master/quora-api/target/generated-sources/io/swagger/api/NotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/Trello_quora-master/quora-api/target/generated-sources/io/swagger/api/NotFoundException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Trello_quora-master/quora-api/target/generated-sources/io/swagger/configuration/SwaggerDocumentationConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/Trello_quora-master/quora-api/target/generated-sources/io/swagger/configuration/SwaggerDocumentationConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Trello_quora-master/quora-api/target/quora-api-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Trello_quora-master/quora-api/target/quora-api-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Trello_quora-master/quora-db/target/quora-db.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Trello_quora-master/quora-db/target/quora-db.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Trello_quora-master/quora-service/src/main/java/com/upgrad/quora/service/business/AnswerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Trello_quora-master/quora-service/src/main/java/com/upgrad/quora/service/business/AnswerService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Trello_quora-master/quora-service/src/main/java/com/upgrad/quora/service/dao/AnswerDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/Trello_quora-master/quora-service/src/main/java/com/upgrad/quora/service/dao/AnswerDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Trello_quora-master/quora-service/target/classes/com/upgrad/quora/service/business/AnswerService.class" beforeDir="false" afterPath="$PROJECT_DIR$/Trello_quora-master/quora-service/target/classes/com/upgrad/quora/service/business/AnswerService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Trello_quora-master/quora-service/target/classes/com/upgrad/quora/service/dao/AnswerDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/Trello_quora-master/quora-service/target/classes/com/upgrad/quora/service/dao/AnswerDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Trello_quora-master/quora-service/target/quora-service-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Trello_quora-master/quora-service/target/quora-service-1.0-SNAPSHOT.jar" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/Trello_quora-master/quora-api/target/" />
@@ -24,11 +54,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Trello_quora-master/quora-api/src/main/java/com/upgrad/quora/api/controller/AnswerController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="64" column="74" lean-forward="true" selection-start-line="64" selection-start-column="74" selection-end-line="64" selection-end-column="74" />
+            <state relative-caret-position="301">
+              <caret line="67" column="80" selection-start-line="67" selection-start-column="80" selection-end-line="67" selection-end-column="80" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -36,11 +66,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Trello_quora-master/quora-service/src/main/java/com/upgrad/quora/service/business/AnswerService.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="390">
-              <caret line="113" lean-forward="true" selection-start-line="113" selection-end-line="113" />
+              <caret line="113" selection-start-line="113" selection-end-line="113" />
             </state>
           </provider>
         </entry>
@@ -48,8 +78,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Trello_quora-master/quora-service/src/main/java/com/upgrad/quora/service/dao/AnswerDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
+            <state relative-caret-position="480">
+              <caret line="45" column="145" selection-start-line="45" selection-start-column="145" selection-end-line="45" selection-end-column="145" />
             </state>
           </provider>
         </entry>
@@ -64,10 +94,10 @@
       <list>
         <option value="$PROJECT_DIR$/Trello_quora-master/quora-api/pom.xml" />
         <option value="$PROJECT_DIR$/Trello_quora-master/pom.xml" />
-        <option value="$PROJECT_DIR$/Trello_quora-master/quora-api/src/main/java/com/upgrad/quora/api/controller/AnswerController.java" />
-        <option value="$PROJECT_DIR$/Trello_quora-master/quora-service/src/main/java/com/upgrad/quora/service/dao/AnswerDao.java" />
         <option value="$PROJECT_DIR$/Trello_quora-master/quora-service/src/main/java/com/upgrad/quora/service/dao/QuestionDao.java" />
         <option value="$PROJECT_DIR$/Trello_quora-master/quora-service/src/main/java/com/upgrad/quora/service/business/AnswerService.java" />
+        <option value="$PROJECT_DIR$/Trello_quora-master/quora-service/src/main/java/com/upgrad/quora/service/dao/AnswerDao.java" />
+        <option value="$PROJECT_DIR$/Trello_quora-master/quora-api/src/main/java/com/upgrad/quora/api/controller/AnswerController.java" />
       </list>
     </option>
   </component>
@@ -262,7 +292,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-2" y="0" width="1924" height="1051" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Image Layers" />
       <window_info id="Designer" />
@@ -314,16 +343,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Trello_quora-master/quora-api/src/main/java/com/upgrad/quora/api/controller/AnswerController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="64" column="74" lean-forward="true" selection-start-line="64" selection-start-column="74" selection-end-line="64" selection-end-column="74" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Trello_quora-master/quora-service/src/main/java/com/upgrad/quora/service/dao/QuestionDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="435">
@@ -331,17 +350,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Trello_quora-master/quora-service/src/main/java/com/upgrad/quora/service/dao/AnswerDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Trello_quora-master/quora-service/src/main/java/com/upgrad/quora/service/business/AnswerService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
-          <caret line="113" lean-forward="true" selection-start-line="113" selection-end-line="113" />
+          <caret line="113" selection-start-line="113" selection-end-line="113" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Trello_quora-master/quora-service/src/main/java/com/upgrad/quora/service/dao/AnswerDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="45" column="145" selection-start-line="45" selection-start-column="145" selection-end-line="45" selection-end-column="145" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Trello_quora-master/quora-api/src/main/java/com/upgrad/quora/api/controller/AnswerController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="301">
+          <caret line="67" column="80" selection-start-line="67" selection-start-column="80" selection-end-line="67" selection-end-column="80" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
