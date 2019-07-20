@@ -5,6 +5,7 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/Trello_quora-master/pom.xml" />
+        <option value="$PROJECT_DIR$/Trello_quora-master/quora-api/target/generated-sources/pom.xml" />
         <option value="$PROJECT_DIR$/Trello_quora-master/quora-db/target/maven-archiver/pom.properties" />
         <option value="$PROJECT_DIR$/Trello_quora-master/quora-api/target/maven-archiver/pom.properties" />
         <option value="$PROJECT_DIR$/Trello_quora-master/quora-api/target/generated-sources/pom.xml" />
