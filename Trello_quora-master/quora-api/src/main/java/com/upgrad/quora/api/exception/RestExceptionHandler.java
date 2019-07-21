@@ -24,7 +24,7 @@ public class RestExceptionHandler {
         return new ResponseEntity<ErrorResponse>(new ErrorResponse()
                 .code(exc.getCode())
                 .message(exc.getErrorMessage()),
-                HttpStatus.FORBIDDEN);
+                HttpStatus.UNAUTHORIZED);
     }
 
     @ExceptionHandler(SignOutRestrictedException.class)
@@ -40,7 +40,7 @@ public class RestExceptionHandler {
         return new ResponseEntity<ErrorResponse>(new ErrorResponse()
                 .code(exc.getCode())
                 .message(exc.getErrorMessage()),
-                HttpStatus.UNAUTHORIZED);
+                HttpStatus.FORBIDDEN);
     }
 
     @ExceptionHandler(InvalidQuestionException.class)
